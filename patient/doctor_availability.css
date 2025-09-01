@@ -1,0 +1,178 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+}
+
+/* Page wrapper */
+body {
+  background: #f6f8fb;
+  padding: 28px;
+  line-height: 1.45;
+}
+
+/* Headings */
+h1, h2 {
+  color: #073b4c;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+h2 { font-size: 1.4rem; }
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Table styles */
+.table-wrap {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(12, 35, 48, 0.06);
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+/* Nice table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+  font-size: 0.95rem;
+}
+
+/* Header */
+table thead th {
+  text-align: left;
+  padding: 12px 14px;
+  background: linear-gradient(90deg, #0f4c75, #3282b8);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  position: sticky;
+  top: 0;
+}
+
+/* Body rows */
+tbody tr {
+  transition: background .12s ease;
+  border-bottom: 1px solid #eef2f6;
+}
+tbody tr:hover {
+  background: #fbfdff;
+}
+
+/* Cells */
+td {
+  padding: 12px 14px;
+  vertical-align: middle;
+  color: #233043;
+}
+
+/* Small meta text */
+td small {
+  display: block;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+/* Buttons & links */
+a.inline-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #06a77d;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(6,167,125,0.12);
+}
+a.inline-btn.secondary {
+  background: #3282b8;
+  box-shadow: 0 4px 10px rgba(50,130,184,0.08);
+}
+
+/* If you remove booking, hide book column easily by giving it a class in HTML */
+.hide-book-column th.book,
+.hide-book-column td.book {
+  display: none;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #0f4c75;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Small responsive adjustments */
+@media (max-width: 860px) {
+  body { padding: 16px; }
+  table { font-size: 0.9rem; }
+  table thead th, td { padding: 10px 8px; }
+}
+
+/* Patient dashboard card styles (optional reuse) */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(12, 35, 48, 0.06);
+}
+.card h3 { color: #515f83; margin-bottom: 8px; font-size: 1.05rem; }
+.card img { width: 64px; height: 64px; object-fit: contain; opacity: .95; }
+.card button {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #06a77d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.card button:hover { transform: translateY(-2px); }
+
+/* Logout link */
+.logout { margin-top: 18px; }
+.logout-button {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #ef476f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e1bdd;
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #3a4be4; 
+}
+

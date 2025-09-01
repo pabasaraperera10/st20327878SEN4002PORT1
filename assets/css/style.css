@@ -1,0 +1,208 @@
+/* assets/css/style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    /* Background image */
+    background-image: url('../images/hospital_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+}
+
+/* Navbar styling */
+.navbar {
+
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 123, 127, 0.85);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+    white-space: nowrap;   
+
+
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+   
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container {
+    max-width: 900px;
+    margin: 160px auto 40px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #007B7F;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.services-grid {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 40px 50px;
+   background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.25); /* subtle dark border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+  text-align: center;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  cursor: default;
+ 
+  box-shadow: none;
+  background: transparent;
+  transition: none;
+}
+
+.service-item:hover {
+  
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.service-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: none;              
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service-item img:hover {
+  box-shadow: 0 0 15px rgba(0, 127, 127, 0.7);
+  transform: scale(1.05);
+}
+
+
+.service-item img:focus {
+  box-shadow: 0 0 20px rgba(0, 127, 127, 1);
+  outline: none;
+  transform: scale(1.1);
+}
+
+.service-item span {
+  font-size: 17px;
+  color: #004f53;
+  font-weight: 600;
+}
+/* Footer Styles */
+.footer {
+  background: #007B7F;  /* green color */
+  color: white;
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  flex-direction: column;   /* stack vertically */
+  gap: 15px;
+}
+
+.footer-section.contact-info h4 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid #004f53;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-section.contact-info p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+

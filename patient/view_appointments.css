@@ -1,0 +1,78 @@
+/* view_appointments.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 20px;
+    color: #333;
+   
+}
+
+/* Center the heading */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+
+table {
+    width: 80%; 
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table cell styles */
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid blue; 
+}
+
+tr:hover {
+    background-color: #0c6ab3;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+a.back-link {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.back-link:hover {
+    background-color: #2980b9;
+}

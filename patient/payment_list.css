@@ -1,0 +1,80 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Heading */
+h2 {
+    color: #160f0f;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Table header styling */
+thead th {
+    background-color: #073b4c;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #3042e2;
+    text-align: left;
+}
+
+/* Table body cells */
+tbody td {
+    padding: 10px;
+    border: 1px solid #0b0e27;
+    text-align: left;
+}
+
+/* Hover effect only on tbody rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links */
+a {
+    color: #093857;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* No data message */
+.no-data {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c6faf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #45a049;
+}
+
+

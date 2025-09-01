@@ -1,0 +1,36 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;  /* Single border instead of double */
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 1px solid #555;  /* Single line border */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #eee;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

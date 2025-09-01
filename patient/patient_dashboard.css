@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(52, 49, 184);
+    margin-top: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100px;   
+    height: 50px; 
+    object-fit: contain; 
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    background: #050835;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.card button {
+    background: #01053b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:hover {
+    background: #0c3bbb;
+}
+
+.logout {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logout a {
+    display: inline-block;
+    background-color: #d9534f; /* red */
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout a:hover {
+    background-color: #c9302c;
+    text-decoration: none;
+}
+

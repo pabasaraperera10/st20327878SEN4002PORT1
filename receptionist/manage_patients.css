@@ -1,0 +1,57 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+h2, h3 {
+    color: #333;
+}
+form {
+    background-color: #fff;
+    padding: 10px;        /* Reduce padding */
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: 300px;         /* Reduce width */
+    font-size: 14px;      /* Adjust font size for the whole form */
+}
+
+form input, form select, form button {
+    display: block;
+    width: 90%;           /* Make inputs slightly smaller */
+    margin-bottom: 8px;   /* Reduce spacing */
+    padding: 4px;         /* Reduce padding inside inputs */
+    font-size: 14px;      /* Adjust input font size */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #eee;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.msg {
+    color: green;
+    margin-bottom: 10px;
+}
